@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Switzer, sans-serif;
+    background:black;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+    url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1974&auto=format&fit=crop');
+    
+    background-size:cover;
+    background-position:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:70px;
+    letter-spacing:6px;
+    color:#00bfff;
+    text-shadow:0 0 20px #00bfff;
+    margin-bottom:20px;
+}
+
+header p{
+    font-size:22px;
+    max-width:700px;
+    margin-bottom:35px;
+    line-height:1.6;
+}
+
+header a{
+    text-decoration:none;
+    color:white;
+    border:2px solid #00bfff;
+    padding:14px 30px;
+    border-radius:30px;
+    font-size:18px;
+    transition:0.4s;
+    box-shadow:0 0 15px #00bfff;
+}
+
+header a:hover{
+    background:#00bfff;
+    color:black;
+    transform:scale(1.05);
+}
+
+/* SECTION */
+
+section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+section h2{
+    font-size:40px;
+    margin-bottom:50px;
+    color:#00bfff;
+    text-shadow:0 0 10px #00bfff;
+}
+
+/* CARDS */
+
+.card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+
+    padding:30px;
+    margin:25px auto;
+    max-width:600px;
+
+    border-radius:20px;
+
+    box-shadow:0 0 20px rgba(0,191,255,0.3);
+
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.02);
+
+    box-shadow:0 0 30px rgba(0,191,255,0.7);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#00bfff;
+    font-size:28px;
+}
+
+.card p{
+    line-height:1.7;
+    color:#ddd;
+}
+
+/* PLANETS */
+
+.planet-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.planet{
+    width:140px;
+    height:140px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:radial-gradient(circle, #00bfff, #001f3f);
+
+    font-size:22px;
+    font-weight:bold;
+
+    box-shadow:0 0 25px #00bfff;
+
+    transition:0.4s;
+}
+
+.planet:hover{
+    transform:scale(1.15) rotate(10deg);
+
+    box-shadow:0 0 40px #00bfff;
+}
+
+/* ABOUT TEXT */
+
+section p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+    color:#ddd;
+}
+
+/* FOOTER */
+
+footer{
+    background:#050505;
+    text-align:center;
+    padding:25px;
+    border-top:1px solid rgba(255,255,255,0.1);
+}
+
+footer p{
+    color:#aaa;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:42px;
+    }
+
+    header p{
+        font-size:18px;
+    }
+
+    section h2{
+        font-size:32px;
+    }
+
+    .planet{
+        width:110px;
+        height:110px;
+    }
+}
